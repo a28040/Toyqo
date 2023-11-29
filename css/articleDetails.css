@@ -1,0 +1,209 @@
+/* start article */
+
+.blog_details {
+    margin: 60px 70px 0;
+}
+
+.blog_details .img {
+    width: 77%;
+    height: 395px;
+    margin: auto;
+}
+
+.blog_details img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog_details h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog_details p {
+    line-height: 1.9;
+}
+
+.blog_details p:first-of-type {
+    margin-top: 10px;
+}
+
+.quote {
+    background: var(--ground--color);
+    border-left: 5px solid var(--main--color);
+    padding: 25px;
+    font-style: italic;
+    margin: 30px;
+}
+
+@media (max-width: 993px) {
+    .blog_details {
+        margin: 60px 0px 0;
+    }
+}
+
+@media (max-width: 773px) {
+    .blog_details .img {
+        width: 100%;
+    }
+}
+
+/* end article */
+
+/* start comment */
+.reviews {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.reviews>h2:first-of-type,
+.reviews>h2:first-of-type span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.review {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review .img {
+    flex-basis: 9%;
+}
+
+.review .img img {
+    width: 100%;
+}
+
+.review .comment {
+    margin-left: 11px;
+    border: 1px solid #eee;
+    flex-basis: 89%;
+    position: relative;
+    padding: 11px;
+    background: #eee;
+}
+
+.review .comment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border: 11px solid;
+    border-color: transparent #eee transparent transparent;
+}
+
+.add_comment p:first-of-type {
+    font-weight: bold;
+}
+
+.add_comment form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.add_comment form>div {
+    flex-basis: 48%;
+}
+
+.add_comment form>div:last-of-type {
+    flex-basis: 100%;
+}
+
+.add_comment form>div label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.add_comment form>div input {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #afafaf;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.add_comment form>div input:focus,
+.add_comment textarea:focus {
+    outline: none;
+}
+
+.add_comment form textarea {
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #afafaf;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.add_comment form button {
+    width: 30%;
+    height: 40px;
+    border-radius: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--main--color);
+    background-color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.add_comment form button:hover {
+    color: var(--second--color);
+}
+
+.add_comment form p {
+    color: red;
+    display: none;
+    flex-basis: 100%;
+}
+
+.review_user {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.comment button {
+    width: 60px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 89%;
+}
+
+@media (max-width: 840px) {
+    .review .img {
+        flex-basis: 13%;
+    }
+
+    .review .comment {
+        flex-basis: 83%;
+    }
+}
+
+@media (max-width: 583px) {
+    .review_user .img {
+        flex-basis: 35%;
+    }
+
+    .review_user .img img {
+        padding: 3px;
+        border: 1px solid #d2d2d2;
+    }
+
+    .review_user .comment {
+        flex-basis: 100%;
+    }
+}
+
+/* end comment */

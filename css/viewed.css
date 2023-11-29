@@ -1,0 +1,42 @@
+.Not_viewed {
+    text-align: center;
+    line-height: 5;
+    display: none;
+}
+
+.Not_viewed a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    background-color: var(--main--color);
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.Not_viewed a:hover {
+    background-color: black;
+    color: var(--second--color);
+}
+
+.Not_viewed p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.remove {
+    position: absolute;
+    left: -10px;
+    background-color: var(--main--color);
+    color: white;
+    font-size: 17px;
+    border-radius: 9px;
+    padding: 5px;
+    top: -10px;
+    filter: saturate(0.8);
+    cursor: pointer;
+}
+
+.item:hover .remove {
+    background-color: var(--second--color);
+}

@@ -1,0 +1,104 @@
+.details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.details>div {
+    width: 48%;
+}
+
+.details label {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.details h2 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--ground--color);
+    padding-bottom: 14px;
+}
+
+.details input,
+.details select,
+.details textarea {
+    height: 37px;
+    width: 100%;
+    padding: 5px;
+    margin: 9px 0 20px 0;
+    border: 1px solid var(--ground--color);
+}
+
+.details input:nth-of-type(4),
+.details input:nth-of-type(5) {
+    width: 49%;
+    margin-right: 0.5%;
+}
+
+.details textarea {
+    height: 120px;
+}
+
+.details table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid var(--ground--color);
+    padding: 10px;
+}
+
+.details table td {
+    width: max-content;
+    height: 40px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.details table tr:not(.details table tr:last-of-type) {
+    border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.details button {
+    width: 30%;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    background-color: var(--main--color);
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+}
+
+.details button:hover {
+    background-color: black;
+    color: var(--second--color);
+}
+
+.order_info {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.subtotal {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+tbody {
+    text-wrap: nowrap;
+}
+
+@media (max-width: 995px) {
+    .details {
+        display: block;
+    }
+
+    .details>div {
+        width: 100%;
+    }
+}

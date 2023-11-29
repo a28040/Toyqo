@@ -1,0 +1,316 @@
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* start about us */
+.about_container {
+    background-color: var(--ground--color);
+    width: 100%;
+    height: 364px;
+    line-height: 1.7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about_container .img {
+    width: 40%;
+    float: left;
+}
+
+.about_container img {
+    width: 100%;
+    border-radius: 16px;
+    filter: saturate(0.7);
+}
+
+.about_container .about_info {
+    float: right;
+    width: 58%;
+}
+
+.about_container h2 {
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+
+    .about_container .img,
+    .about_container .about_info {
+        float: none;
+        width: 100%;
+    }
+
+    .about_container {
+        height: max-content;
+    }
+}
+
+@media (max-width: 500px) {
+    .about_container h2 {
+        font-size: 29px;
+    }
+}
+
+/* end about us */
+/* start why choose us */
+.choose_us,
+.our_team_container,
+.testimonials {
+    text-align: center;
+    margin-top: 80px;
+    line-height: 1.7;
+}
+
+.choose_us .why,
+.our_team_container .team {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 991.5px) {
+
+    .choose_us .why,
+    .our_team_container .team {
+        justify-content: space-between;
+    }
+}
+
+.choose_us .why>div {
+    flex-basis: 357px;
+}
+
+.choose_us .why>div i {
+    font-size: 40px;
+    color: var(--main--color);
+    margin-top: 20px;
+}
+
+.choose_us .why>div i:hover {
+    color: var(--second--color);
+}
+
+.choose_us .why>div h3 {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .choose_us .why>div {
+        flex-basis: 100%;
+    }
+}
+
+/* end why choose us */
+
+/* start Testimonials */
+.testimonials {
+    background: linear-gradient(175deg, rgb(4 117 122), rgb(212 17 114));
+    height: 562px;
+    padding-top: 30px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.Carousel-slider {
+    margin-top: 120px;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.slider-wrapper {
+    overflow: visible !important;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 300px !important;
+}
+
+.slider-item {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    display: none;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100px;
+    cursor: pointer;
+    border: 5px solid var(--second--color);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.slider-item.show::before {
+    position: absolute;
+    content: "Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque";
+    width: 100px;
+    height: 100px;
+    top: -185%;
+    left: -174px;
+    background-color: transparent;
+    width: 504%;
+    height: max-content;
+    line-height: 1.7;
+}
+
+.slider-item.show::after {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: calc(100px + 10%);
+    color: black;
+    left: 16%;
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+}
+
+.img1.show::after {
+    content: "Jems ";
+}
+
+.img2.show::after {
+    content: "Tinsy ";
+}
+
+.img3.show::after {
+    content: "Asmaa";
+}
+
+.img4.show::after {
+    content: "Mohamed";
+}
+
+.img5.show::after {
+    content: " Osama";
+}
+
+.img6.show::after {
+    content: "Asraa";
+}
+
+@media (max-width: 585px) {
+    .slider-item.show::before {
+        left: -123px;
+        width: 365%;
+    }
+}
+
+@media (max-width: 387px) {
+    .slider-item.show::before {
+        top: -221%;
+        left: -91px;
+        width: 293%;
+    }
+
+    .slider-item.show::after {
+        font-size: 18px;
+    }
+}
+
+.img1 {
+    background-image: url(../photo/5.jpg);
+}
+
+.img2 {
+    background-image: url(../photo/5.jpg);
+}
+
+.img3 {
+    background-image: url(../photo/4.jpg);
+}
+
+.img4 {
+    background-image: url(../photo/5.jpg);
+}
+
+.img5 {
+    background-image: url(../photo/6.jpg);
+}
+
+.img6 {
+    background-image: url(../photo/4.jpg);
+}
+
+/* end Testimonials */
+
+/* start ourteam */
+.our_team_container .team>div {
+    flex-basis: 25%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 995px) {
+    .our_team_container .team>div {
+        flex-basis: calc(100% / 3);
+    }
+}
+
+@media (max-width: 770px) {
+    .our_team_container .team>div {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .our_team_container .team>div {
+        flex-basis: 100%;
+    }
+}
+
+.our_team_container .team>div .img_container img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.our_team_container .team>div span {
+    color: var(--main--color);
+}
+
+.our_team_container .team>div .img_container {
+    position: relative;
+}
+
+.our_team_container .team>div .overlay {
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.our_team_container .team>div .img_container:hover .overlay {
+    height: 64px;
+}
+
+.our_team_container .team>div .img_container:hover img {
+    filter: grayscale(0);
+    border: 1px solid var(--main--color);
+}
+
+.our_team_container .team>div .overlay i {
+    background-color: var(--ground--color);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.our_team_container .team>div .overlay i:hover {
+    background-color: var(--main--color);
+    color: white;
+}
+
+/* end our team */

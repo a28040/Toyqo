@@ -1,0 +1,224 @@
+.section-form {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    background-color: #efebe9;
+    height: 523px;
+    display: flex;
+    box-shadow: 14px 25px 36px -11px #40404061;
+    border-radius: 29px;
+    overflow: hidden;
+}
+
+.section-form .form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+.section-form .form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+.section-form .form h2 {
+    margin: 35px;
+    font-family: ui-monospace;
+    color: #431919;
+}
+
+.section-form .img {
+    position: relative;
+    background-image: url(../photo/3.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#username,
+#password,
+#usernameRegister,
+#passwordRegister,
+#email {
+    width: 86%;
+    height: 28px;
+    border-color: transparent transparent #411919 transparent;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    color: #726f6f;
+}
+
+.section-form .form label:nth-of-type(1),
+.section-form .form label:nth-of-type(3) {
+    margin-right: 55%;
+    margin-bottom: -46px;
+}
+
+label:nth-of-type(2) {
+    margin-right: 61%;
+    margin-bottom: -46px;
+}
+
+.section-form .form input:focus {
+    border-color: transparent transparent #411919 transparent;
+    outline: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.section-form form p span {
+    color: #726f6f;
+}
+
+.section-form form p.wrong,
+.section-form form p.alert,
+.section-form form p.alertInvalid {
+    color: red;
+    font-size: 13px;
+    position: relative;
+    display: none;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+
+.section-form form p.have,
+.section-form form p.Nothave {
+    margin-top: -25px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #131212;
+}
+
+.section-form form p.wrong::before,
+.section-form form p.alert::before,
+.section-form form p.alertInvalid::before {
+    position: absolute;
+    top: 4px;
+    left: -11px;
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+#log_in,
+#register {
+    border-radius: 30px;
+    width: 38%;
+    height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--second--color);
+    border: none;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#log_in:hover,
+#register:hover {
+    opacity: 1;
+}
+
+.register {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1100px) {
+    .section-form .img {
+        background-position-x: -122px;
+    }
+}
+
+@media (max-width: 703px) {
+    .section-form {
+        border-radius: 29px;
+        flex-direction: column;
+        overflow: hidden;
+        top: 57%;
+    }
+
+    .section-form .form h2 {
+        margin: 0px;
+    }
+
+    .section-form .img {
+        border-radius: 0;
+        background-position-x: -0;
+    }
+
+    .section-form form p.wrong,
+    .section-form form p.alert {
+        margin-top: 10px;
+    }
+
+    .section-form .form {
+        flex-basis: 65%;
+        width: 100%;
+        height: 235%;
+        border-radius: 0px 0 28px 28px;
+        box-shadow: 0px 0px 21px 1px #0000007a;
+    }
+}
+
+@media (max-width: 540px) {
+    .section-form img {
+        width: 114%;
+    }
+}
+
+@media (max-width: 335px) {
+
+    .section-form .form label:nth-of-type(1),
+    .section-form .form label:nth-of-type(3) {
+        font-size: 13px;
+    }
+
+    label:nth-of-type(2) {
+        font-size: 13px;
+    }
+
+    .section-form form p.have,
+    .section-form form p.Nothave {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 285px) {
+    .section-form .form h2 {
+        font-size: 21px;
+    }
+
+    .section-form form p.wrong,
+    .section-form form p.alert {
+        font-size: 11px;
+    }
+
+    .section-form form p.have,
+    .section-form form p.Nothave {
+        font-size: 11px;
+    }
+
+    #log_in,
+    #register {
+        width: 46%;
+        height: 34px;
+        font-size: 18px;
+    }
+}

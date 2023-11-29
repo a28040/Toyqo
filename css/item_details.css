@@ -1,0 +1,352 @@
+.ItemDetails {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.img {
+    flex-basis: 35%;
+}
+
+.ItemDetails .img img {
+    width: 100%;
+    outline: 3px solid var(--ground--color);
+    padding: 20px;
+}
+
+.Iteminfo {
+    flex-basis: 60%;
+}
+
+.ItemDetails h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.ItemDetails .price {
+    color: var(--main--color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ItemDetails .available {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Iteminfo>span {
+    font-weight: bold;
+}
+
+.Iteminfo input {
+    margin-top: 20px;
+    height: 38px;
+}
+
+.Iteminfo button {
+    background-color: black;
+    font-weight: bold;
+    color: var(--main--color);
+    margin-top: 20px;
+    width: 193px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.Iteminfo button:hover {
+    color: var(--second--color);
+}
+
+@media (max-width: 914px) {
+    .img {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Iteminfo {
+        flex-basis: 100%;
+    }
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: var(--main--color);
+    height: 48px;
+    margin-top: 60px;
+    line-height: 48px;
+    border: 2px solid var(--main--color);
+    justify-content: space-between;
+}
+
+.tabs h2 {
+    border: 2px solid var(--main--color);
+    border-color: transparent transparent var(--main--color) var(--main--color);
+    border-top: none;
+    display: inline-block;
+    flex-basis: calc(100% / 3);
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.tabs h2:hover {
+    background-color: white;
+}
+
+@media (max-width: 578px) {
+    .tabs h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tabs h2 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 425px) {
+    .tabs h2 {
+        flex-basis: max-content;
+        font-size: 11px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 352px) {
+    .tabs h2 {
+        flex-basis: max-content;
+        font-size: 11px;
+        height: 48px;
+    }
+}
+
+.tabs h2.active {
+    background-color: white;
+}
+
+.tabs_content {
+    border: 2px solid var(--main--color);
+    padding: 20px;
+}
+
+.tabs_content p {
+    margin-top: 10px;
+    color: #282828;
+    line-height: 1.7;
+}
+
+.tabs_content>div {
+    display: none;
+}
+
+.tabs_content>div.active {
+    display: block;
+}
+
+.policy {
+    line-height: 1.7;
+}
+
+.policy h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.policy ul {
+    margin-left: 45px;
+    color: #282828;
+}
+
+.policy p {
+    margin-top: 10px;
+    color: #282828;
+}
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review .img {
+    flex-basis: 9%;
+}
+
+.review .img img {
+    width: 100%;
+}
+
+.review .comment {
+    border: 1px solid #eee;
+    flex-basis: 89%;
+    position: relative;
+    padding: 11px;
+    background: #eee;
+}
+
+.review .comment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border: 11px solid;
+    border-color: transparent #eee transparent transparent;
+}
+
+.add_comment p:first-of-type {
+    font-weight: bold;
+}
+
+.add_comment form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.add_comment form>div {
+    flex-basis: 48%;
+}
+
+.add_comment form>div:last-of-type {
+    flex-basis: 100%;
+}
+
+.add_comment form>div label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.add_comment form>div input {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #afafaf;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.add_comment form>div input:focus,
+.add_comment textarea:focus {
+    outline: none;
+}
+
+.add_comment form textarea {
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #afafaf;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.add_comment form button {
+    width: 30%;
+    height: 40px;
+    border-radius: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--main--color);
+    background-color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.add_comment form button:hover {
+    color: var(--second--color);
+}
+
+.add_comment form p {
+    color: red;
+    display: none;
+    flex-basis: 100%;
+}
+
+.review_user {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.comment button {
+    width: 60px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 89%;
+}
+
+@media (max-width: 840px) {
+    .review .img {
+        flex-basis: 13%;
+    }
+
+    .review .comment {
+        flex-basis: 83%;
+    }
+}
+
+@media (max-width: 583px) {
+    .review_user .img {
+        flex-basis: 35%;
+    }
+
+    .review_user .img img {
+        padding: 3px;
+        border: 1px solid #d2d2d2;
+    }
+
+    .review_user .comment {
+        flex-basis: 100%;
+    }
+}
+
+/* hover on img */
+
+img {
+    max-width: 100%;
+}
+
+#overlay {
+    display: none;
+    background: url(../photo/1.jpg);
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    margin-top: 17%;
+    margin-left: 29%;
+    border: 2px solid #555;
+    z-index: 1000;
+    background-repeat: no-repeat;
+}
+
+#mouse-overlay {
+    cursor: zoom-in;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    transform: translate(-50%, -50%);
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    #overlay {
+        margin-left: 43%;
+        width: 53%;
+        height: 22%;
+        margin-top: 66%;
+    }
+}
